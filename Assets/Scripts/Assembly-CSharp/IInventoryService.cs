@@ -1,0 +1,22 @@
+public interface IInventoryService
+{
+	Inventory c844f1a916a01fdb8a6a6e640d1811cf2(int c5dfde30d8784694fb9999709d290e6c4, GetInventoryCallback c2db84530ef366a6deb001d449d4aa151 = null);
+
+	void cd2ff2d0b9710155a2e44c955d431a48d(int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c234b6e5b8ed8e7dc06b7d1ec110c895d(int c5dfde30d8784694fb9999709d290e6c4);
+
+	void cd5aabef23453e5fe1dc51bd3dddabd23();
+
+	void c7d08ed02a7697465eaaf348e5256df6d(InventoryCallback c2db84530ef366a6deb001d449d4aa151);
+
+	void c0e99b4914f8c6b80f6233d720bf3d53f(InventoryCallback c2db84530ef366a6deb001d449d4aa151);
+
+	void c49cacf0466f30da65d9fd1bbf2c43d64(ItemRewardCallback c2db84530ef366a6deb001d449d4aa151);
+
+	void c2d4a239826a505d83e051d84f6235017(ItemRewardCallback c2db84530ef366a6deb001d449d4aa151);
+
+	void c05f80d16e3170409ad1eb25c2513dafe(WarehouseCallback c2db84530ef366a6deb001d449d4aa151);
+
+	void c65c59da24f9798ba26f34e1faad4f76a(WarehouseCallback c2db84530ef366a6deb001d449d4aa151);
+}

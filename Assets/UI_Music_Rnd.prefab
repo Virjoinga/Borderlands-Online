@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1230128952020253}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1230128952020253
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4758189699212059}
+  - 114: {fileID: 114793842305621836}
+  m_Layer: 0
+  m_Name: UI_Music_Rnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4758189699212059
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230128952020253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4223798688225211}
+  - {fileID: 4210552939416832}
+  - {fileID: 4192962918063743}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114793842305621836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230128952020253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653daa038ab3781e6aa64fb94ae95599, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_clip: {fileID: 0}
+  m_audioTemplate: {fileID: 82789753344197801, guid: 3ff4ec54a537a974f8c25c485bcc3dfb, type: 2}
+  m_enablePlaybackLimit: 1
+  m_instanceNum: 2
+  m_scope: 1
+  m_rule: 1
+  m_enableRandomPitch: 0
+  m_randomPitchRange: 0.2
+  m_defaultPitch: 1
+  m_mixer:
+    m_scale: 0.4
+  m_bus:
+    m_guidString: be44b94d-a747-4cad-a3e2-331bd01b1b9a
+  m_inheritFromParent: 0
+  m_RTPCs:
+    Array: []
+  m_parameters: {fileID: 0}
+  m_responsers:
+  - {fileID: 114992988628530570}
+  - {fileID: 114426670370869381}
+  - {fileID: 114535690112400807}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!1 &1567753468155947
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4223798688225211}
+  - 114: {fileID: 114992988628530570}
+  m_Layer: 0
+  m_Name: 01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4223798688225211
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567753468155947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4758189699212059}
+  m_RootOrder: 0
+--- !u!114 &114992988628530570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567753468155947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57a18651fa0d2a2e615d5137eb9e447, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_clip: {fileID: 8300000, guid: 3b2772ea4e8aa6e4f9cc9642645a5849, type: 3}
+  m_audioTemplate: {fileID: 82789753344197801, guid: 3ff4ec54a537a974f8c25c485bcc3dfb, type: 2}
+  m_enablePlaybackLimit: 0
+  m_instanceNum: 1
+  m_scope: 1
+  m_rule: 1
+  m_enableRandomPitch: 0
+  m_randomPitchRange: 0
+  m_defaultPitch: 1
+  m_mixer:
+    m_scale: 0.978
+  m_bus:
+    m_guidString:
+  m_inheritFromParent: 1
+  m_RTPCs:
+    Array: []
+  m_parameters: {fileID: 0}
+--- !u!1 &1188270774919330
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4210552939416832}
+  - 114: {fileID: 114426670370869381}
+  m_Layer: 0
+  m_Name: 02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4210552939416832
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188270774919330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4758189699212059}
+  m_RootOrder: 1
+--- !u!114 &114426670370869381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1188270774919330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57a18651fa0d2a2e615d5137eb9e447, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_clip: {fileID: 8300000, guid: d87972bf962463f41825f61a7fd94597, type: 3}
+  m_audioTemplate: {fileID: 82789753344197801, guid: 3ff4ec54a537a974f8c25c485bcc3dfb, type: 2}
+  m_enablePlaybackLimit: 0
+  m_instanceNum: 1
+  m_scope: 1
+  m_rule: 1
+  m_enableRandomPitch: 0
+  m_randomPitchRange: 0
+  m_defaultPitch: 1
+  m_mixer:
+    m_scale: 1
+  m_bus:
+    m_guidString:
+  m_inheritFromParent: 1
+  m_RTPCs:
+    Array: []
+  m_parameters: {fileID: 0}
+--- !u!1 &1724268355173885
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4192962918063743}
+  - 114: {fileID: 114535690112400807}
+  m_Layer: 0
+  m_Name: 03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4192962918063743
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1724268355173885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4758189699212059}
+  m_RootOrder: 2
+--- !u!114 &114535690112400807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1724268355173885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57a18651fa0d2a2e615d5137eb9e447, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_clip: {fileID: 8300000, guid: 552ebd11a25b80345af895f67e9f62bd, type: 3}
+  m_audioTemplate: {fileID: 82789753344197801, guid: 3ff4ec54a537a974f8c25c485bcc3dfb, type: 2}
+  m_enablePlaybackLimit: 0
+  m_instanceNum: 1
+  m_scope: 1
+  m_rule: 1
+  m_enableRandomPitch: 0
+  m_randomPitchRange: 0
+  m_defaultPitch: 1
+  m_mixer:
+    m_scale: 1
+  m_bus:
+    m_guidString:
+  m_inheritFromParent: 1
+  m_RTPCs:
+    Array: []
+  m_parameters: {fileID: 0}

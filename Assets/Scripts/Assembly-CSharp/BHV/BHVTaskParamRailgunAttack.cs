@@ -1,0 +1,73 @@
+using A;
+using UnityEngine;
+
+namespace BHV
+{
+	public sealed class BHVTaskParamRailgunAttack : BHVTaskParam
+	{
+		public GameObject c14854daae2833463b186fc5cc589a09c;
+
+		public float c78a81a448556cec8bf5b37e4b17c5c5d;
+
+		public float c33f61bf31429003b457d54fc20133b0f;
+
+		public float cbfe48220d0686c9350881808f74550ba;
+
+		public float cb31e7a7cc3352d6e80d9e8944777a410;
+
+		private int c0f562bde5ff2d23731b86c07aaa322bc;
+
+		public BHVTaskParamRailgunAttack()
+		{
+			base.m_Type = BHVTaskType.RailgunAttack;
+			c14854daae2833463b186fc5cc589a09c = cf088431fef58ee0d8274f8c300aa822c.c7088de59e49f7108f520cf7e0bae167e;
+			c78a81a448556cec8bf5b37e4b17c5c5d = 0.2f;
+			c33f61bf31429003b457d54fc20133b0f = 20f;
+			cbfe48220d0686c9350881808f74550ba = 1.5f;
+			cb31e7a7cc3352d6e80d9e8944777a410 = 2f;
+			c0f562bde5ff2d23731b86c07aaa322bc = -1;
+		}
+
+		public override void c495597d24b447ad725643e71f5a54375()
+		{
+			c14854daae2833463b186fc5cc589a09c = BHVTaskParam.ce24b6cf07e186720ddf2f0f5b8e36db5(c0f562bde5ff2d23731b86c07aaa322bc);
+		}
+
+		public override void c9e0f906b8d383cc92cdc6bfdc3266fc2()
+		{
+			c0f562bde5ff2d23731b86c07aaa322bc = BHVTaskParam.cc06b80e952247ccc25281196351a06ea(c14854daae2833463b186fc5cc589a09c);
+		}
+
+		public override void c21abc56059d171e999147f26bbf75889(ref BHVTaskParamSync.Data c90756c75001df916758775f95eee6676, bool ca0a690ca94fac43f6d2dd7209319634b)
+		{
+			base.c21abc56059d171e999147f26bbf75889(ref c90756c75001df916758775f95eee6676, ca0a690ca94fac43f6d2dd7209319634b);
+			if (ca0a690ca94fac43f6d2dd7209319634b)
+			{
+				while (true)
+				{
+					switch (1)
+					{
+					case 0:
+						break;
+					default:
+						if (1 == 0)
+						{
+							/*OpCode not supported: LdMemberToken*/;
+						}
+						c90756c75001df916758775f95eee6676.c4dc17c8c736f97081413efcc43072ab4 = c0f562bde5ff2d23731b86c07aaa322bc;
+						c90756c75001df916758775f95eee6676.c8d6d0618a619c5377bfa2192b652bb59 = c78a81a448556cec8bf5b37e4b17c5c5d;
+						c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4.x = c33f61bf31429003b457d54fc20133b0f;
+						c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4.y = cbfe48220d0686c9350881808f74550ba;
+						c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4.z = cb31e7a7cc3352d6e80d9e8944777a410;
+						return;
+					}
+				}
+			}
+			c0f562bde5ff2d23731b86c07aaa322bc = c90756c75001df916758775f95eee6676.c4dc17c8c736f97081413efcc43072ab4;
+			c78a81a448556cec8bf5b37e4b17c5c5d = c90756c75001df916758775f95eee6676.c8d6d0618a619c5377bfa2192b652bb59;
+			c33f61bf31429003b457d54fc20133b0f = c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4.x;
+			cbfe48220d0686c9350881808f74550ba = c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4.y;
+			cb31e7a7cc3352d6e80d9e8944777a410 = c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4.z;
+		}
+	}
+}

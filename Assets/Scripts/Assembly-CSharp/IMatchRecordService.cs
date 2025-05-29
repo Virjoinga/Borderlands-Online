@@ -1,0 +1,4 @@
+public interface IMatchRecordService
+{
+	void c01213846eb5656726889fdb7be49adac(GetMatchRecordCallback c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+}

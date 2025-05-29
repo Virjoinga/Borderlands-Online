@@ -1,0 +1,24 @@
+using XsdSettings;
+
+public interface ILobbyServiceWrapper : IServiceWrapper
+{
+	void ca1a46125e5889b9b6092367966900859(OnInviteToLobby c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c56f2ef09c2c7b78d464a6d3be6b30e33(OnAcceptLobbyInvitation c2db84530ef366a6deb001d449d4aa151, int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void cb29008727fccd108206478ea0a634586(OnRejectLobbyInvitation c2db84530ef366a6deb001d449d4aa151, int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void c90e08ff45bd89b1b852ef7a4959d640b(OnKickPlayerFromLobby c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void ce30914cedf948c8ebefe3783fb6c7f87(OnLeaveLobby c2db84530ef366a6deb001d449d4aa151);
+
+	void cf3b52513e8cba99304793361dc501a83(OnStartLobbyGame c2db84530ef366a6deb001d449d4aa151);
+
+	void c400ced1c9947fde74182ee4f25a9570e(OnGetLobby c2db84530ef366a6deb001d449d4aa151);
+
+	void c7a337098f70dabdd1dc7f3a6a249dc79(OnCloseLobby c2db84530ef366a6deb001d449d4aa151);
+
+	void cf919217c11722f259176c952c8aba513(OnCreateLobby c2db84530ef366a6deb001d449d4aa151, bool c6e6204a589f73f6bec566251719b4847);
+
+	void c5e5cc544f50051d78abdccc1aec483a8(OnOpenLobby c2db84530ef366a6deb001d449d4aa151, GamemodeType c7c285f21497bec76d425ba4a0a524b46, int c62856dd6dd9686293af23b8532ee3525, ELevelDifficulty c46b57735a769802f4565a74b7185cc1f);
+}

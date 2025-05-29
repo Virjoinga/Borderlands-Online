@@ -1,0 +1,18 @@
+public interface IGroupServiceWrapper : IServiceWrapper
+{
+	void c84e7d656f39a60ef71f428c59209c060(OnGotMyGroupInfo c2db84530ef366a6deb001d449d4aa151);
+
+	void c89fcb77276a7956cd51b61c3a4437b0f(OnSendGroupInvitation c2db84530ef366a6deb001d449d4aa151, int ca8606b1ba21cbc6f2fc0045fe691e617);
+
+	void c134957d891c1a5e48a3b0e225297e7cb();
+
+	void cdabc733e8aacf96718d8617e58274f40(OnGroupInviteAccepted c2db84530ef366a6deb001d449d4aa151, int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void c574e1ae38231526cf898f00f985e88b2(int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void c347662a41df388198423d3559d957132(OnKickPlayerFromGroup c2db84530ef366a6deb001d449d4aa151, int c1f6894ec2553584a258c0f0df766fc1f);
+
+	void c635f796eee513fdcf0733537d7f44398(OnLeaveGroup c2db84530ef366a6deb001d449d4aa151);
+
+	void cde4925fdec123105628516489c324acf(OnGotMyGroupInfo c2db84530ef366a6deb001d449d4aa151);
+}

@@ -1,0 +1,389 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1876870836246433}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1876870836246433
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4692358361230491}
+  - 114: {fileID: 114233086534955958}
+  - 114: {fileID: 114738148918921143}
+  - 114: {fileID: 114756901783804305}
+  m_Layer: 0
+  m_Name: CHR_Soldier_VFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4692358361230491
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876870836246433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4844378901254355}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114233086534955958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876870836246433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9da10d771c9d95c64645f452e91e1f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name: PlayHealing
+  m_triggerType: 0
+  m_keyCode: 0
+  m_location: 0
+  m_effectItemList:
+  - m_conditionSource:
+    m_conditionAction:
+    m_conditionDestination: []
+    m_effect: {fileID: 114108959285597148}
+    m_effectNameToPlay: PlayHealing
+  m_gameObject: {fileID: 0}
+  m_raycastDistance: 0
+  m_raycastDirection: 0
+  m_specifiedRaycastDirection: {x: 0, y: -1, z: 0}
+  m_specifiedRaycastOrigin: {x: 0, y: 0, z: 0}
+--- !u!114 &114738148918921143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876870836246433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fd4aa15db26777e267b73393d40db9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_particleList:
+  - m_type: 23
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_Shock
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 24
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_Dust
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 25
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_MeteorFist
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent: Export_L_VFX_Punch
+    m_boneTr: {fileID: 0}
+  - m_type: 29
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_Status
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 30
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_Airflow
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 39
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Cure_Heart
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent: VFX_CureHeart
+    m_boneTr: {fileID: 0}
+  - m_type: 42
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_Shock_First
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 43
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Berserker_MeteorFist_First
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent: Export_L_VFX_Punch
+    m_boneTr: {fileID: 0}
+  - m_type: 9
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Fire_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent: Export_L_VFX_Punch
+    m_boneTr: {fileID: 0}
+  - m_type: 47
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Soldier_Turret_Out
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 48
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Soldier_Turret_Off
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 51
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_First_Person_Shield_Damage
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 40
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Barrel_Explode
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4692358361230491}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 5
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Impact_Blood_On_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent: Wep_Bullet_Hit_Rnd
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 6
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Headshot_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent: Wep_Bullet_Hit_Rnd
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 10
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Electricity_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent: Wep_Ele_Shock
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 14
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Continued_Electricity_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 13
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Continued_Fire_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 3
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Dizzy_SpiderantStun
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 11
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Impact_Fx_Corrosive
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 15
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Continued_Corrosive_NPC
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 53
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_First_Person_Electricity
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 54
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_First_Person_Venom
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 55
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_First_Person_Fire
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 70
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Soldier_Turret_Ammo
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 71
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Soldier_Turret_Helth
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 72
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Soldier_Turret_HelthAmmoIcon
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 73
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Sniper_Camera_Glow
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 0}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  m_audioCtl: {fileID: 114756901783804305}
+--- !u!114 &114756901783804305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876870836246433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3b9b6517eb4f1efd94ae167cd89c9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1276593554063891
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4844378901254355}
+  - 114: {fileID: 114108959285597148}
+  - 114: {fileID: 114716308324303264}
+  m_Layer: 10
+  m_Name: Effects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4844378901254355
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276593554063891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.6059465, y: 2.6772904, z: 23.235626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4692358361230491}
+  m_RootOrder: 0
+--- !u!114 &114108959285597148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276593554063891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a6c6e3b9fe86e8d05471468e87f0ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: PlayRevive
+  m_useCloneWhenPlayEffect: 1
+  m_rotateClone: 1
+  m_destroyCloneAfterEffect: 1
+  m_durationForDestroyClone: 5
+  m_delay: 0
+  m_offsetToMoveClone: {x: 0, y: 0, z: 0}
+  m_eulerAnglesToRotateClone: {x: -90, y: 0, z: 0}
+  m_effect: {fileID: 198459521203113498, guid: 077bc1ea4a9fb844c9b490768fcb59fa, type: 2}
+  m_restartWhenPlay: 1
+--- !u!114 &114716308324303264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276593554063891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9257d5c020eb54fe35c9be854b141c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: PlayHealing
+  m_useCloneWhenPlayEffect: 0
+  m_rotateClone: 1
+  m_destroyCloneAfterEffect: 1
+  m_durationForDestroyClone: 5
+  m_delay: 0
+  m_offsetToMoveClone: {x: 0, y: 1.8, z: 0}
+  m_eulerAnglesToRotateClone: {x: 0, y: 0, z: 0}
+  m_effect: {fileID: 15433174838871353, guid: a719674f1ee80c248aca968fa57010b8, type: 2}

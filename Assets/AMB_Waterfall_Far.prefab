@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1979949214013751}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1979949214013751
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4433837113199753}
+  - 82: {fileID: 82401153522451842}
+  - 169: {fileID: 169863676904235403}
+  - 114: {fileID: 114461652205037735}
+  m_Layer: 0
+  m_Name: AMB_Waterfall_Far
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4433837113199753
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979949214013751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.028028, y: 2.501243, z: -5.1027446}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!82 &82401153522451842
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979949214013751}
+  m_Enabled: 1
+  m_audioClip: {fileID: 8300000, guid: 657b340bd7b5d2440a467540e57d90f6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.54599994
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 10
+  MaxDistance: 35
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0.24632037
+      value: 0.99593496
+      inSlope: -3.5014071
+      outSlope: -3.5014071
+      tangentMode: 0
+    - time: 0.34777236
+      value: 0.7395076
+      inSlope: -2.2283478
+      outSlope: -2.2283478
+      tangentMode: 0
+    - time: 0.52597404
+      value: 0.45121953
+      inSlope: -1.2888573
+      outSlope: -1.2888573
+      tangentMode: 0
+    - time: 1
+      value: 0.041811854
+      inSlope: -0.28582835
+      outSlope: -0.28582835
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0.8414634
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 0.39696968
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!169 &169863676904235403
+AudioLowPassFilter:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979949214013751}
+  m_Enabled: 1
+  m_CutoffFrequency: 6080.411
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0.020694733
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 0.6333333
+      value: 0.72394675
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114461652205037735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979949214013751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57a18651fa0d2a2e615d5137eb9e447, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_clip: {fileID: 0}
+  m_audioTemplate: {fileID: 0}
+  m_enablePlaybackLimit: 0
+  m_instanceNum: 1
+  m_scope: 0
+  m_rule: 1
+  m_enableRandomPitch: 0
+  m_randomPitchRange: 0
+  m_defaultPitch: 0
+  m_mixer:
+    m_scale: 0.8
+  m_bus:
+    m_guidString: dc3bf2ee-c1e0-4b74-ac5d-e0ed372b81ff
+  m_inheritFromParent: 0
+  m_RTPCs:
+    Array: []
+  m_parameters: {fileID: 0}

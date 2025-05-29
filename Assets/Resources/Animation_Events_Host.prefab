@@ -1,0 +1,1236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1077685478740581}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1077685478740581
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4236661172342707}
+  - 114: {fileID: 114707743249389540}
+  m_Layer: 0
+  m_Name: Animation_Events_Host
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4236661172342707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077685478740581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.3799553, y: 4.909049, z: -26.633972}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114707743249389540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077685478740581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2e141d88759f1451592396ab98e88b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  data:
+  - animatorController: {fileID: 0}
+    animatorControllerName: BanditPsychoMecAnimControlller_RootMotion
+    layer: 0
+    stateNameHash: -1460068319
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.3
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: ThrowWeapon
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.7971
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: SpawnWeapon
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: BanditPsychoMecAnimControlller_RootMotion
+    layer: 0
+    stateNameHash: 1570257978
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.3171875
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.3425781
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.38691407
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: BanditKillerMecAnimControlller_RootMotion
+    layer: 0
+    stateNameHash: -411113912
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.54
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: ThrowWeapon
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: BanditKillerMecAnimControlller_RootMotion
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.2998047
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SpitterMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -1870434926
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.6228571
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: SpitBall
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SpitterMecanimController_RootMotion
+    layer: 0
+    stateNameHash: 160054312
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.40285715
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: SpitBall
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SpitterMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.411
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.664
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.682
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.779
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: CrisomLanceDefender_AnimController
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.2445212
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: GuardianWraithMecAnimControlller
+    layer: 0
+    stateNameHash: 1570257978
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.18261719
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.1953125
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.20996092
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.22265625
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 3.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.2314453
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 3.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SpiderantMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.26660156
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 1
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.26660156
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 1
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SkagMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.411859
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.66426283
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.681891
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.77884614
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: BruiserMecAnimControlller
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.43554688
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: BanditScoutMecanimControlller
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.27539062
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: MechaKnoxxMecanimController
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.2347826
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 1
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.41739133
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.5
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: MechaKnoxxMecanimController
+    layer: 0
+    stateNameHash: -1556988693
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.51111114
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: RightLaserSweepStart
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.62222224
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: RightLaserSweepEnd
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.8
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: LeftLaserSweepStart
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.93333334
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: LeftLaserSweepEnd
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: MidgetMecAnimControlller
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.20996095
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: MidgetMecAnimControlller
+    layer: 0
+    stateNameHash: -778830685
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.0137
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: StartShoot
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: MidgetMecAnimControlller
+    layer: 0
+    stateNameHash: 1516059934
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.0352
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: StartShoot
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SkagZillaMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.411
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.664
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.682
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 2.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.779
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SpiderantTalosMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.5888672
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.5966797
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: SpiderantTalosMecanimController_RootMotion
+    layer: 0
+    stateNameHash: 973067445
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.7979021
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: RadiusAttackHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: WidowmakerMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.28549352
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 1
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.2939453
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: WidowmakerMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -694785745
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.6252
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: RadiusAttackHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: WidowmakerMecanimController_RootMotion
+    layer: 0
+    stateNameHash: -1123057161
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.33229813
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: ThrowWebTrap
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: CrisomLanceMedic_AnimController
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.29140833
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: ApollyonMecanimController
+    layer: 0
+    stateNameHash: -1731822775
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.9783
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: TakeOutHammer
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: ApollyonMecanimController
+    layer: 0
+    stateNameHash: 1874330476
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.036
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.81672025
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: PutBackHammer
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: ApollyonMecanimController
+    layer: 0
+    stateNameHash: -1955980505
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.1511254
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: TakeOutHammer
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.3923077
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.926045
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: PutBackHammer
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: ApollyonMecanimController
+    layer: 0
+    stateNameHash: -227526916
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.170418
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: TakeOutHammer
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.9581993
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: PutBackHammer
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions: []
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: TheInsaneTentacleController
+    layer: 0
+    stateNameHash: 795514212
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.5519677
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.6306716
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  - animatorController: {fileID: 0}
+    animatorControllerName: CrabwormMecanimController
+    layer: 0
+    stateNameHash: -200386538
+    events:
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.1915403
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.195
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 0.5
+          intValue: 0
+          boolValue: 0
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 3
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+    - functionName: TriggerAnimationEventMecanim
+      normalizedTime: 0.22
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: MeleeHit
+      boolParam: 0
+      enumParam:
+      condition:
+        conditions:
+        - conditionParam: fAttackID
+          conditionParamType: 1
+          conditionMode: 2
+          floatValue: 1.5
+          intValue: 0
+          boolValue: 0
+      critical: 0
+      isEnable: 1
+  lastEdit: {fileID: 0}

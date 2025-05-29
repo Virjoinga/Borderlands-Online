@@ -1,0 +1,159 @@
+Ø/Shader "Loading/LoadingShader_InstanceName" {
+Properties {
+ _MainTex ("Base (RGB)", 2D) = "white" {}
+ _TextureAlpha ("Alpha", Float) = 0
+}
+SubShader { 
+ LOD 200
+ Tags { "QUEUE"="Transparent+1" "RenderType"="Transparent" }
+ Pass {
+  Tags { "QUEUE"="Transparent+1" "RenderType"="Transparent" }
+  Blend SrcAlpha OneMinusSrcAlpha
+Program "vp" {
+SubProgram "opengl " {
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+"!!ARBvp1.0
+PARAM c[5] = { program.local[0],
+		state.matrix.mvp };
+MOV result.texcoord[0].xy, vertex.texcoord[0];
+DP4 result.position.w, vertex.position, c[4];
+DP4 result.position.z, vertex.position, c[3];
+DP4 result.position.y, vertex.position, c[2];
+DP4 result.position.x, vertex.position, c[1];
+END
+# 5 instructions, 0 R-regs
+"
+}
+SubProgram "d3d9 " {
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+Matrix 0 [glstate_matrix_mvp]
+"vs_2_0
+dcl_position0 v0
+dcl_texcoord0 v1
+mov oT0.xy, v1
+dp4 oPos.w, v0, c3
+dp4 oPos.z, v0, c2
+dp4 oPos.y, v0, c1
+dp4 oPos.x, v0, c0
+"
+}
+SubProgram "d3d11 " {
+Bind "vertex" Vertex
+Bind "color" Color
+Bind "texcoord" TexCoord0
+ConstBuffer "UnityPerDraw" 336
+Matrix 0 [glstate_matrix_mvp]
+BindCB  "UnityPerDraw" 0
+"vs_4_0
+eefiecedbepnjaobjkhbfimaiijkadljkplfkciiabaaaaaafiacaaaaadaaaaaa
+cmaaaaaapeaaaaaaemabaaaaejfdeheomaaaaaaaagaaaaaaaiaaaaaajiaaaaaa
+aaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapapaaaakbaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaabaaaaaaapaaaaaakjaaaaaaaaaaaaaaaaaaaaaaadaaaaaaacaaaaaa
+ahaaaaaalaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaadaaaaaaapadaaaalaaaaaaa
+abaaaaaaaaaaaaaaadaaaaaaaeaaaaaaapaaaaaaljaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaafaaaaaaapaaaaaafaepfdejfeejepeoaafeebeoehefeofeaaeoepfc
+enebemaafeeffiedepepfceeaaedepemepfcaaklepfdeheofaaaaaaaacaaaaaa
+aiaaaaaadiaaaaaaaaaaaaaaabaaaaaaadaaaaaaaaaaaaaaapaaaaaaeeaaaaaa
+aaaaaaaaaaaaaaaaadaaaaaaabaaaaaaapamaaaafdfgfpfagphdgjhegjgpgoaa
+feeffiedepepfceeaaklklklfdeieefcaeabaaaaeaaaabaaebaaaaaafjaaaaae
+egiocaaaaaaaaaaaaeaaaaaafpaaaaadpcbabaaaaaaaaaaafpaaaaaddcbabaaa
+adaaaaaaghaaaaaepccabaaaaaaaaaaaabaaaaaagfaaaaaddccabaaaabaaaaaa
+giaaaaacabaaaaaadiaaaaaipcaabaaaaaaaaaaafgbfbaaaaaaaaaaaegiocaaa
+aaaaaaaaabaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaaaaaaaaaaaaaaaaaa
+agbabaaaaaaaaaaaegaobaaaaaaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaa
+aaaaaaaaacaaaaaakgbkbaaaaaaaaaaaegaobaaaaaaaaaaadcaaaaakpccabaaa
+aaaaaaaaegiocaaaaaaaaaaaadaaaaaapgbpbaaaaaaaaaaaegaobaaaaaaaaaaa
+dgaaaaafdccabaaaabaaaaaaegbabaaaadaaaaaadoaaaaab"
+}
+SubProgram "d3d11_9x " {
+Bind "vertex" Vertex
+Bind "color" Color
+Bind "texcoord" TexCoord0
+ConstBuffer "UnityPerDraw" 336
+Matrix 0 [glstate_matrix_mvp]
+BindCB  "UnityPerDraw" 0
+"vs_4_0_level_9_1
+eefiecedkhdmfmldlhhcjnofhdgjljapiacocalaabaaaaaadaadaaaaaeaaaaaa
+daaaaaaaaeabaaaabaacaaaaniacaaaaebgpgodjmmaaaaaammaaaaaaaaacpopp
+jiaaaaaadeaaaaaaabaaceaaaaaadaaaaaaadaaaaaaaceaaabaadaaaaaaaaaaa
+aeaaabaaaaaaaaaaaaaaaaaaaaacpoppbpaaaaacafaaaaiaaaaaapjabpaaaaac
+afaaadiaadaaapjaafaaaaadaaaaapiaaaaaffjaacaaoekaaeaaaaaeaaaaapia
+abaaoekaaaaaaajaaaaaoeiaaeaaaaaeaaaaapiaadaaoekaaaaakkjaaaaaoeia
+aeaaaaaeaaaaapiaaeaaoekaaaaappjaaaaaoeiaaeaaaaaeaaaaadmaaaaappia
+aaaaoekaaaaaoeiaabaaaaacaaaaammaaaaaoeiaabaaaaacaaaaadoaadaaoeja
+ppppaaaafdeieefcaeabaaaaeaaaabaaebaaaaaafjaaaaaeegiocaaaaaaaaaaa
+aeaaaaaafpaaaaadpcbabaaaaaaaaaaafpaaaaaddcbabaaaadaaaaaaghaaaaae
+pccabaaaaaaaaaaaabaaaaaagfaaaaaddccabaaaabaaaaaagiaaaaacabaaaaaa
+diaaaaaipcaabaaaaaaaaaaafgbfbaaaaaaaaaaaegiocaaaaaaaaaaaabaaaaaa
+dcaaaaakpcaabaaaaaaaaaaaegiocaaaaaaaaaaaaaaaaaaaagbabaaaaaaaaaaa
+egaobaaaaaaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaaaaaaaaaaacaaaaaa
+kgbkbaaaaaaaaaaaegaobaaaaaaaaaaadcaaaaakpccabaaaaaaaaaaaegiocaaa
+aaaaaaaaadaaaaaapgbpbaaaaaaaaaaaegaobaaaaaaaaaaadgaaaaafdccabaaa
+abaaaaaaegbabaaaadaaaaaadoaaaaabejfdeheomaaaaaaaagaaaaaaaiaaaaaa
+jiaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapapaaaakbaaaaaaaaaaaaaa
+aaaaaaaaadaaaaaaabaaaaaaapaaaaaakjaaaaaaaaaaaaaaaaaaaaaaadaaaaaa
+acaaaaaaahaaaaaalaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaadaaaaaaapadaaaa
+laaaaaaaabaaaaaaaaaaaaaaadaaaaaaaeaaaaaaapaaaaaaljaaaaaaaaaaaaaa
+aaaaaaaaadaaaaaaafaaaaaaapaaaaaafaepfdejfeejepeoaafeebeoehefeofe
+aaeoepfcenebemaafeeffiedepepfceeaaedepemepfcaaklepfdeheofaaaaaaa
+acaaaaaaaiaaaaaadiaaaaaaaaaaaaaaabaaaaaaadaaaaaaaaaaaaaaapaaaaaa
+eeaaaaaaaaaaaaaaaaaaaaaaadaaaaaaabaaaaaaapamaaaafdfgfpfagphdgjhe
+gjgpgoaafeeffiedepepfceeaaklklkl"
+}
+}
+Program "fp" {
+SubProgram "opengl " {
+SetTexture 0 [_MainTex] 2D 0
+"!!ARBfp1.0
+TEX result.color, fragment.texcoord[0], texture[0], 2D;
+END
+# 1 instructions, 0 R-regs
+"
+}
+SubProgram "d3d9 " {
+SetTexture 0 [_MainTex] 2D 0
+"ps_2_0
+dcl_2d s0
+dcl t0.xy
+texld r0, t0, s0
+mov_pp oC0, r0
+"
+}
+SubProgram "d3d11 " {
+SetTexture 0 [_MainTex] 2D 0
+"ps_4_0
+eefiecedfimplgonjjmnfeplllmnalecnjjncggmabaaaaaaceabaaaaadaaaaaa
+cmaaaaaaieaaaaaaliaaaaaaejfdeheofaaaaaaaacaaaaaaaiaaaaaadiaaaaaa
+aaaaaaaaabaaaaaaadaaaaaaaaaaaaaaapaaaaaaeeaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaabaaaaaaapadaaaafdfgfpfagphdgjhegjgpgoaafeeffiedepepfcee
+aaklklklepfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaaaaaaaaaapaaaaaafdfgfpfegbhcghgfheaaklklfdeieefcgeaaaaaa
+eaaaaaaabjaaaaaafkaaaaadaagabaaaaaaaaaaafibiaaaeaahabaaaaaaaaaaa
+ffffaaaagcbaaaaddcbabaaaabaaaaaagfaaaaadpccabaaaaaaaaaaaefaaaaaj
+pccabaaaaaaaaaaaegbabaaaabaaaaaaeghobaaaaaaaaaaaaagabaaaaaaaaaaa
+doaaaaab"
+}
+SubProgram "d3d11_9x " {
+SetTexture 0 [_MainTex] 2D 0
+"ps_4_0_level_9_1
+eefiecedfmiihbonoblgabcljnpmgbhhbdopkilfabaaaaaajeabaaaaaeaaaaaa
+daaaaaaajmaaaaaaaiabaaaagaabaaaaebgpgodjgeaaaaaageaaaaaaaaacpppp
+dmaaaaaaciaaaaaaaaaaciaaaaaaciaaaaaaciaaabaaceaaaaaaciaaaaaaaaaa
+aaacppppbpaaaaacaaaaaaiaaaaaaplabpaaaaacaaaaaajaaaaiapkaecaaaaad
+aaaacpiaaaaaoelaaaaioekaabaaaaacaaaicpiaaaaaoeiappppaaaafdeieefc
+geaaaaaaeaaaaaaabjaaaaaafkaaaaadaagabaaaaaaaaaaafibiaaaeaahabaaa
+aaaaaaaaffffaaaagcbaaaaddcbabaaaabaaaaaagfaaaaadpccabaaaaaaaaaaa
+efaaaaajpccabaaaaaaaaaaaegbabaaaabaaaaaaeghobaaaaaaaaaaaaagabaaa
+aaaaaaaadoaaaaabejfdeheofaaaaaaaacaaaaaaaiaaaaaadiaaaaaaaaaaaaaa
+abaaaaaaadaaaaaaaaaaaaaaapaaaaaaeeaaaaaaaaaaaaaaaaaaaaaaadaaaaaa
+abaaaaaaapadaaaafdfgfpfagphdgjhegjgpgoaafeeffiedepepfceeaaklklkl
+epfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaaaaaaaaaaaaaaaaaaadaaaaaa
+aaaaaaaaapaaaaaafdfgfpfegbhcghgfheaaklkl"
+}
+}
+ }
+}
+Fallback "Diffuse"
+}

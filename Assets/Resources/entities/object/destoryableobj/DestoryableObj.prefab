@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1275180006441321}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1275180006441321
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4450825852613622}
+  - 114: {fileID: 114060215115025507}
+  - 114: {fileID: 114939557646310221}
+  - 114: {fileID: 114462842564341129}
+  - 114: {fileID: 114913307450762519}
+  - 114: {fileID: 114828949111949225}
+  - 114: {fileID: 114512538425906551}
+  m_Layer: 0
+  m_Name: DestoryableObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4450825852613622
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114060215115025507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b2b6b8a33ae18e9e2694c73d4eb7c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  subId: 0
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  m_priority: 0
+  m_priorityRunTime: 0
+  lastTimeDataSend: 0
+  observed: {fileID: 0}
+  synchronizationDir: 0
+  synchronization: 0
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: -1
+  grossSerializeSize: 0
+  grossRPCSize: 0
+  grossSerializeSizeRCV: 0
+  grossRPCSizeRCV: 0
+--- !u!114 &114939557646310221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382adf07e7f20d7d77efc91a89d2abd0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_networkViews: []
+  m_entityHeight: 1.8
+  m_name: DestoryableObj
+  m_xmlConfig: {fileID: 4900000, guid: d9fe6b1a06395de48892374930e378b4, type: 3}
+  m_postInitXmlConfig: {fileID: 0}
+  m_ability: {fileID: 0}
+  m_relatedPlayer: {fileID: 0}
+  m_skeleton: {fileID: 0}
+  m_killer: {fileID: 0}
+  m_bCanReceiveShootDamage: 1
+  m_bCanReceiveMeleeDamage: 1
+  m_bCanReceiveAreaDamage: 1
+  m_subType: 11
+  m_bHideUI: 0
+--- !u!114 &114462842564341129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01324d6997ebd1b3fca0a88537b2b93, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114913307450762519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b2b6b8a33ae18e9e2694c73d4eb7c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  subId: 0
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  m_priority: 0
+  m_priorityRunTime: 0
+  lastTimeDataSend: 0
+  observed: {fileID: 114462842564341129}
+  synchronizationDir: 0
+  synchronization: 1
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: -1
+  grossSerializeSize: 0
+  grossRPCSize: 0
+  grossSerializeSizeRCV: 0
+  grossRPCSizeRCV: 0
+--- !u!114 &114828949111949225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4355c7c499f4b58b6dcc2ddd3f68fbfd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114512538425906551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275180006441321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b2b6b8a33ae18e9e2694c73d4eb7c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  subId: 0
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  m_priority: 0
+  m_priorityRunTime: 0
+  lastTimeDataSend: 0
+  observed: {fileID: 114828949111949225}
+  synchronizationDir: 0
+  synchronization: 1
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: -1
+  grossSerializeSize: 0
+  grossRPCSize: 0
+  grossSerializeSizeRCV: 0
+  grossRPCSizeRCV: 0

@@ -1,0 +1,52 @@
+using XsdSettings;
+
+public interface ICharacterService
+{
+	void c1d309289b19d1731266e05df9a0d0a59(OnGetCharacterList c2db84530ef366a6deb001d449d4aa151);
+
+	void c4e6b2ff8a59760b88bf7b115eec5e023(OnGetCharacter c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void cfea7b08f44245df70e20eb1d37766b74(OnCreateCharacter c2db84530ef366a6deb001d449d4aa151, string cd99af21e22e356018b8f72d4a7e4872a, AvatarType c951097a6ef3eb670bc38dce2cd336b7a, uint ca938ea365c8e111e058825536bf0df26, string cae80a9f4f672fadf39e72d87ae1e9e79, string c05e4d2ddd62623e1e855164cca3fa3b5);
+
+	void cb9427f8203768e92d6a2876d77325c3a(OnGetCharacter c2db84530ef366a6deb001d449d4aa151);
+
+	void c3357ebacf41523207dec1c272b0c2753();
+
+	void cdfa79ad431f569bb78954d4da9bf4eec(string c7e6bfb9029303a26d69314500f450e13);
+
+	void cb7dd5fe3098d3d1cbef965add21fb7c0(byte[] c1085967e882b59c9c37b671c465d1472);
+
+	void cf1fa48b975ff7ac8672738194fcf30b4(OnGetCharacter c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c96afde9869ce72bec33e53eac31aee4a(OnExperienceUpdated c2db84530ef366a6deb001d449d4aa151);
+
+	void c613f1b4f864b4e225369dd3f92a949ff(OnLevelUp c2db84530ef366a6deb001d449d4aa151);
+
+	void ce44f2a4a8767f0c745f29d10533f3624(OnNotifyAntiAddiction c2db84530ef366a6deb001d449d4aa151);
+
+	void c5a95ad57c06b3b86edf0157165f29afc(OnGetPersonalSettings c2db84530ef366a6deb001d449d4aa151);
+
+	void c26ab8d967b8fbc4f5361d98ef23ea236(OnSetPersonalSettings c2db84530ef366a6deb001d449d4aa151);
+
+	void cabc2eda7c543c0bd71dabf94afc17a90(OnGPKDynCode c2db84530ef366a6deb001d449d4aa151);
+
+	void c7dd4624d9c3a72d4118d18bb6ab1cacd(OnGPKAuthData c2db84530ef366a6deb001d449d4aa151);
+
+	void c67bc25d770eba6323bf0b6b3a06e045a(OnGPKAuthReply c2db84530ef366a6deb001d449d4aa151);
+
+	void cd0d81d8a5597efc859cb244f9e023f95(OnExperienceUpdated c2db84530ef366a6deb001d449d4aa151);
+
+	void c6d9fe5aeebc6c50c07133973e8cc6ac1(OnLevelUp c2db84530ef366a6deb001d449d4aa151);
+
+	void cad0143fb8914a0b052fc270dd1d5385d(OnNotifyAntiAddiction c2db84530ef366a6deb001d449d4aa151);
+
+	void c94da62724c6d5a439f4011792c2d82b1(OnGetPersonalSettings c2db84530ef366a6deb001d449d4aa151);
+
+	void c3cdc796edd63ade947ca70a4e16cafff(OnSetPersonalSettings c2db84530ef366a6deb001d449d4aa151);
+
+	void cfeac6e7f466c21d36e1a29eb1c94c1ba(OnGPKDynCode c2db84530ef366a6deb001d449d4aa151);
+
+	void cec8d342731b6d6ebc828fcd5f5dae562(OnGPKAuthData c2db84530ef366a6deb001d449d4aa151);
+
+	void cf33fdb1ee20db9f794c9edbc91a85323(OnGPKAuthReply c2db84530ef366a6deb001d449d4aa151);
+}

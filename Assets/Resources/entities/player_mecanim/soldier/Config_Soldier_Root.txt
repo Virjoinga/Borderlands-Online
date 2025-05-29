@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ComponentList>
+  <Prefab Name="Entities/Player_Mecanim/Soldier/CHR_Soldier_VFX"/>
+	
+  <MonoBehaviour Type="BHVTaskManager" NeedInstantiate="False" NeedInitialize="True">
+    <Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Soldier/Config_Soldier_TaskManager"/>
+  </MonoBehaviour>	
+  
+  <MonoBehaviour Type="TurretManage" NeedInitialize="True">
+    <Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Soldier/Config_Soldier_Skill"/>
+  </MonoBehaviour>
+
+  <MonoBehaviour Type="BHVBrain" NeedInitialize="True">
+    <Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Soldier/Config_Soldier_Brain"/>
+  </MonoBehaviour>
+  
+  <MonoBehaviour Type="InstanceInput"/>
+  <MonoBehaviour Type="BadAssCharacterMotorLite"/>
+  <MonoBehaviour Type="CollisionManager"/>
+  <MonoBehaviour Type="PlayerBehavior" IsLocalOnly="true"/>
+  <MonoBehaviour Type="PlayerBehaviorRemote" IsRemoteOnly="true"/>
+  <MonoBehaviour Type="PlayerControllerLocal" IsLocalOnly="true"/>
+  <MonoBehaviour Type="PlayerController" IsRemoteOnly="true"/>
+  <MonoBehaviour Type="PlayerWeaponAnimationManagerFSM" IsLocalOnly="true"/>
+  <MonoBehaviour Type="PlayerAssembly"/>
+  <MonoBehaviour Type="PlayerThirdPersonAnimationManagerFSM" NeedInitialize="True">
+	<Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Soldier/Config_Soldier_ThirdPerson_AnimationManager"/>
+  </MonoBehaviour>
+</ComponentList>
+
+
+
+
+
+
+
+
+

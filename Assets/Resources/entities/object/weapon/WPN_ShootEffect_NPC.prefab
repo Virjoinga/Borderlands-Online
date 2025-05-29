@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1093270705352158}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1093270705352158
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4418759222497180}
+  - 114: {fileID: 114875003846338259}
+  m_Layer: 0
+  m_Name: WPN_ShootEffect_NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4418759222497180
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093270705352158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4465876117925861}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114875003846338259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093270705352158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9da10d771c9d95c64645f452e91e1f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name: OnAttack
+  m_triggerType: 0
+  m_keyCode: 103
+  m_location: 1
+  m_effectItemList:
+  - m_conditionSource: 01000000
+    m_conditionAction: 00000000
+    m_conditionDestination:
+    - Soil
+    m_effect: {fileID: 0}
+    m_effectNameToPlay: Soil
+  - m_conditionSource: 01000000
+    m_conditionAction: 00000000
+    m_conditionDestination:
+    - Rock
+    m_effect: {fileID: 114661750712466584}
+    m_effectNameToPlay: Rock
+  - m_conditionSource: 01000000
+    m_conditionAction: 00000000
+    m_conditionDestination:
+    - Wood
+    m_effect: {fileID: 114661750712466584}
+    m_effectNameToPlay: Wood
+  - m_conditionSource: 01000000
+    m_conditionAction: 00000000
+    m_conditionDestination:
+    - Metal
+    m_effect: {fileID: 114661750712466584}
+    m_effectNameToPlay: Metal
+  m_gameObject: {fileID: 0}
+  m_raycastDistance: 300
+  m_raycastDirection: 3
+  m_specifiedRaycastDirection: {x: 0, y: -1, z: 0}
+  m_specifiedRaycastOrigin: {x: 0, y: 0, z: 0}
+--- !u!1 &1995874420655415
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4465876117925861}
+  - 114: {fileID: 114661750712466584}
+  - 114: {fileID: 114204554528559949}
+  - 114: {fileID: 114533141010591028}
+  - 114: {fileID: 114244102495893890}
+  - 114: {fileID: 114042076668184804}
+  - 114: {fileID: 114921024710892943}
+  - 114: {fileID: 114164031341676948}
+  - 114: {fileID: 114260003058722630}
+  m_Layer: 0
+  m_Name: Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4465876117925861
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4418759222497180}
+  m_RootOrder: 0
+--- !u!114 &114661750712466584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a6c6e3b9fe86e8d05471468e87f0ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Soil
+  m_useCloneWhenPlayEffect: 1
+  m_rotateClone: 1
+  m_destroyCloneAfterEffect: 1
+  m_durationForDestroyClone: 5
+  m_delay: 0.15
+  m_offsetToMoveClone: {x: 0, y: 0, z: 0}
+  m_eulerAnglesToRotateClone: {x: -90, y: 0, z: 0}
+  m_effect: {fileID: 198063001500607258, guid: 20ebc663cbbd1bc41a245ffe801cbe42, type: 2}
+  m_restartWhenPlay: 1
+--- !u!114 &114204554528559949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b492d0b4fe5a3c4e43c20d4142c077, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Soil
+  m_material: {fileID: 2100000, guid: 9be8b759cd1d4c94bb14f7a32d3f415c, type: 2}
+  m_decalSize: {x: 0.22, y: 0.22, z: 0.22}
+  m_texture:
+  - {fileID: 2800000, guid: f39d5da65f62be943a4b3eed91a8a198, type: 3}
+  m_poolSize: 30
+--- !u!114 &114533141010591028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a6c6e3b9fe86e8d05471468e87f0ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Rock
+  m_useCloneWhenPlayEffect: 1
+  m_rotateClone: 1
+  m_destroyCloneAfterEffect: 1
+  m_durationForDestroyClone: 5
+  m_delay: 0.15
+  m_offsetToMoveClone: {x: 0, y: 0, z: 0}
+  m_eulerAnglesToRotateClone: {x: -90, y: 0, z: 0}
+  m_effect: {fileID: 198689499805935724, guid: 153c0386dbcf40e4ab68bf79c4e7186c, type: 2}
+  m_restartWhenPlay: 1
+--- !u!114 &114244102495893890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b492d0b4fe5a3c4e43c20d4142c077, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Rock
+  m_material: {fileID: 2100000, guid: 9be8b759cd1d4c94bb14f7a32d3f415c, type: 2}
+  m_decalSize: {x: 0.22, y: 0.22, z: 0.22}
+  m_texture:
+  - {fileID: 2800000, guid: e71c71c5066aaec4dafe5044a43eb413, type: 3}
+  m_poolSize: 30
+--- !u!114 &114042076668184804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a6c6e3b9fe86e8d05471468e87f0ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Wood
+  m_useCloneWhenPlayEffect: 1
+  m_rotateClone: 1
+  m_destroyCloneAfterEffect: 1
+  m_durationForDestroyClone: 5
+  m_delay: 0.15
+  m_offsetToMoveClone: {x: 0, y: 0, z: 0}
+  m_eulerAnglesToRotateClone: {x: -90, y: 0, z: 0}
+  m_effect: {fileID: 198328246496078830, guid: a51643418abae624eb9b6adb809595e3, type: 2}
+  m_restartWhenPlay: 1
+--- !u!114 &114921024710892943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b492d0b4fe5a3c4e43c20d4142c077, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Wood
+  m_material: {fileID: 2100000, guid: 9be8b759cd1d4c94bb14f7a32d3f415c, type: 2}
+  m_decalSize: {x: 0.22, y: 0.22, z: 0.22}
+  m_texture:
+  - {fileID: 2800000, guid: d80f90fd359df5c4f8d60ef21c86be46, type: 3}
+  m_poolSize: 30
+--- !u!114 &114164031341676948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a6c6e3b9fe86e8d05471468e87f0ef, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Metal
+  m_useCloneWhenPlayEffect: 1
+  m_rotateClone: 1
+  m_destroyCloneAfterEffect: 1
+  m_durationForDestroyClone: 5
+  m_delay: 0.15
+  m_offsetToMoveClone: {x: 0, y: 0, z: 0}
+  m_eulerAnglesToRotateClone: {x: -90, y: 0, z: 0}
+  m_effect: {fileID: 198486693844764400, guid: 881ce1dfb5ae43d43848ed3105bf4a8a, type: 2}
+  m_restartWhenPlay: 1
+--- !u!114 &114260003058722630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995874420655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b492d0b4fe5a3c4e43c20d4142c077, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_myName: Metal
+  m_material: {fileID: 2100000, guid: 9be8b759cd1d4c94bb14f7a32d3f415c, type: 2}
+  m_decalSize: {x: 0.22, y: 0.22, z: 0.22}
+  m_texture:
+  - {fileID: 2800000, guid: f9830c71d7f4a7c43a45684db639f353, type: 3}
+  m_poolSize: 30

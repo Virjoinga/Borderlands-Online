@@ -1,0 +1,6 @@
+internal interface IStatsService
+{
+	void cf76434d43128d0c642b22989c9bd835d(string c7c285f21497bec76d425ba4a0a524b46, int ca1fe61abde52868f679caf67108b2858, int c24a23635a8b6b95d7730eefdf77f7b9e, int c5dfde30d8784694fb9999709d290e6c4, string cf02cbedfd63c343e590df85de90aed56);
+
+	void c92e26b4ee182d64071fc2b885c172e51(string c7c285f21497bec76d425ba4a0a524b46, int ca1fe61abde52868f679caf67108b2858, int c24a23635a8b6b95d7730eefdf77f7b9e, int c5dfde30d8784694fb9999709d290e6c4, string cf02cbedfd63c343e590df85de90aed56);
+}

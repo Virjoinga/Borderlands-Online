@@ -1,0 +1,16 @@
+public interface IPvPRoomServiceWrapper : IServiceWrapper
+{
+	void caa4a47453ea971fd2067d44f36a0ed43(OnInviteToLobby c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c1cfffd13655715201bd438cb413c4f67(OnAcceptLobbyInvitation c2db84530ef366a6deb001d449d4aa151, int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void c1bdf2c860a2d1cd68483a47561b6fc89(OnRejectLobbyInvitation c2db84530ef366a6deb001d449d4aa151, int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void c8842e55f3627037c4826450ddc239fa0(OnKickPlayerFromLobby c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c5e280689a1b4c9471dd5fdfb9a5fab31(OnLeaveLobby c2db84530ef366a6deb001d449d4aa151);
+
+	void c9753076c0b0c7eec9eac887d781300ff(OnStartLobbyGame c2db84530ef366a6deb001d449d4aa151);
+
+	void c5fb2cfb40182a00f03bd404574c40d13(OnGetLobby c2db84530ef366a6deb001d449d4aa151);
+}

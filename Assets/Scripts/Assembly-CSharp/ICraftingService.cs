@@ -1,0 +1,14 @@
+using XsdSettings;
+
+internal interface ICraftingService
+{
+	void c2b738a0787415710b9ab86768a28207d(OnSmeltWeapon c2db84530ef366a6deb001d449d4aa151, int cd27037dd3bf1006e6e39ebf89cbd7b03);
+
+	void c99dc1247f2835cc10ef79f23e75449c8(OnCraftWeapon c2db84530ef366a6deb001d449d4aa151, WeaponType c27b7430edc94b8f5b543605119ec4a72);
+
+	void cd5ebddd4f7d88647487b39fa8b1ae798(OnGetMyCraftedWeapons c2db84530ef366a6deb001d449d4aa151);
+
+	void c1ce781f2f9808d850e290cc8196d4f10(OnUpgradeStarExperience c2db84530ef366a6deb001d449d4aa151, int cc9e01f27c0efed9577d81fb17c1fba75);
+
+	void c85f327d439d363ea060637d0fb984bef(OnUpgradeStarLevel c2db84530ef366a6deb001d449d4aa151, int cc9e01f27c0efed9577d81fb17c1fba75);
+}

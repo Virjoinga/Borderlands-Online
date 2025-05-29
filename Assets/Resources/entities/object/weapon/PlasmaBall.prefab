@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1534914955334694}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1534914955334694
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4969207334085626}
+  - 114: {fileID: 114848667755553098}
+  - 114: {fileID: 114799468977920549}
+  - 135: {fileID: 135524567143011463}
+  - 114: {fileID: 114906334188352517}
+  m_Layer: 0
+  m_Name: PlasmaBall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4969207334085626
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534914955334694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.188301, y: 3.7874575, z: 19.07595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114848667755553098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534914955334694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fd4aa15db26777e267b73393d40db9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_particleList:
+  - m_type: 33
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Knoxx_Gather
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4969207334085626}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 34
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Knoxx_Bullet
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4969207334085626}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  - m_type: 35
+    m_particleGameObject: {fileID: 0}
+    m_particleGameObjectName: PTL_Knoxx_Burst
+    m_particle: {fileID: 0}
+    m_particleTransform: {fileID: 4969207334085626}
+    m_audioEvent:
+    m_boneParent:
+    m_boneTr: {fileID: 0}
+  m_audioCtl: {fileID: 0}
+--- !u!114 &114799468977920549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534914955334694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5256608e361a0949cbc01d0f283cb5f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_bStartFlying: 0
+  m_vFlyingDir: {x: 0, y: 0, z: 0}
+  m_vTargetPos: {x: 0, y: 0, z: 0}
+  m_flyingSpeed: 0
+  m_damageDuration: 2
+  m_damage: 10
+  m_chargeTime: 1
+  m_damageRadius: 2
+  m_BHVTaskManager: {fileID: 0}
+  m_attackObject: {fileID: 0}
+--- !u!135 &135524567143011463
+SphereCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534914955334694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114906334188352517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534914955334694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f152728edd535f0b385faad981fe1c47, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_elementalDamage: 0
+  m_damageRatioPerSecond: 0
+  m_fixedDamagePerSecond: 0
+  m_hurtPlayer: 1
+  m_hurtNpc: 0
+  m_hurtBoss: 0

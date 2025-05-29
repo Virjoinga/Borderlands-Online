@@ -1,0 +1,8 @@
+internal interface ICurrencyService
+{
+	void ceaf946a4b1d023143d622c7be7019235(OnGotCurrencies c2db84530ef366a6deb001d449d4aa151);
+
+	void c9a1a020b9c227311aeba9b5e48ccec2b(OnCurrenciesUpdated c2db84530ef366a6deb001d449d4aa151);
+
+	void c0b8be230e87a5cf71ef51ec29c2b0e3d(OnCurrenciesUpdated c2db84530ef366a6deb001d449d4aa151);
+}

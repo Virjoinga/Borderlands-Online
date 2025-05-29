@@ -1,0 +1,4 @@
+internal interface ILuckyBoxService
+{
+	void cc153f529c9d81cda8397e0213df6f866(OnLuckyBoxOpened c2db84530ef366a6deb001d449d4aa151, int c5612a459a84ffdb41c885401433cd62d, bool c4cc507173518aa9977af6f5db77f0b09);
+}

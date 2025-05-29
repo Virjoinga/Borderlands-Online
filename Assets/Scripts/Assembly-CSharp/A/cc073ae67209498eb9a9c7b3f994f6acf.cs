@@ -1,0 +1,10 @@
+namespace A
+{
+	internal sealed class cc073ae67209498eb9a9c7b3f994f6acf
+	{
+		internal static cf9493c5c15451e808a5e74c32781383a[] c0a0cdf4a196914163f7334d9b0781a04(int c36964cf41281414170f34ee68bef6c06)
+		{
+			return new cf9493c5c15451e808a5e74c32781383a[c36964cf41281414170f34ee68bef6c06];
+		}
+	}
+}

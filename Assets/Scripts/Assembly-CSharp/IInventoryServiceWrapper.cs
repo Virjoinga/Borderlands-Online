@@ -1,0 +1,50 @@
+using XsdSettings;
+
+public interface IInventoryServiceWrapper : IServiceWrapper
+{
+	ItemDNA c48db535623c3c5d4028ae3a36cb12dc6(int c793014f9fd028450a4a9908376309f26);
+
+	ItemDNA c4e0dae6a16a8a80ddb5214a896b9df58(byte c793014f9fd028450a4a9908376309f26);
+
+	ItemDNA cec5e771a298fe1e51f84e4ec6dcb5165();
+
+	ItemDNA c86b944a82d70502ff9ec6c7d1fa5f420();
+
+	byte c91233b4b8268e8e24a4daa8c053e41ec();
+
+	int c5ddb5f74d1f3e3c06409d657ed5eb7a1(AmmoType c1e73ae4c18ab95639cb0c7604f21dc2b);
+
+	int cd164b9ec3a9d0fc37e11d7fd46792ef2(AmmoType c1e73ae4c18ab95639cb0c7604f21dc2b);
+
+	int ca77a0dd5dbf0daa686053361865cb06a();
+
+	int caa75b946a7aa0d2b3a6d5c5b2b94f0a3();
+
+	void cc62b4b3e79f635a94d84949382bba1fc(byte c42a8a9b0dd4206315a44f945fbf7331f, byte c5242449e40eab9ce5011e2bacd82070c);
+
+	void ccfdbed5cc5051e9ffb25bea212f7ddc6(byte c42a8a9b0dd4206315a44f945fbf7331f, byte c5242449e40eab9ce5011e2bacd82070c);
+
+	void cabac189d699c8d8d56d0e1a68cd1440b(byte cd27037dd3bf1006e6e39ebf89cbd7b03, byte c19a39247ea86ffe5f0de9d429ca0ca95);
+
+	void c89361444df98c6f8354125e8bdb18882(byte c19a39247ea86ffe5f0de9d429ca0ca95);
+
+	void c61f40925cf99c31aa9ac5df098110ada(byte c71953cab9dff52e14146804e2928df92);
+
+	void c2bf177eafbfeb7beaa0bfd04facb2029(byte c71953cab9dff52e14146804e2928df92);
+
+	void cccb56495987b6a4ebab7b225fb1af261(byte c793014f9fd028450a4a9908376309f26);
+
+	void cb71c24b68b65fe176d7936520d63a102(byte c19a39247ea86ffe5f0de9d429ca0ca95);
+
+	bool cc7fc82e2186587ba2141daa47aab239e(byte c19a39247ea86ffe5f0de9d429ca0ca95);
+
+	void c4664d50badb8133ba931a253977f782d(byte c42a8a9b0dd4206315a44f945fbf7331f, byte c5242449e40eab9ce5011e2bacd82070c);
+
+	void c972a624b053fa175be4e64196965eb15(byte c30d73fd0c12edf60c058e08df3692557, byte cfaffa833cc1d4800aa963fe18d6e8a07, bool c57a95ebcb899508cd608bd72d959a9f9);
+
+	void cd5aabef23453e5fe1dc51bd3dddabd23();
+
+	ItemDNA[] c77d8654eaecd92e95d29266c606a0f92();
+
+	bool c8247c0810f772f58d56e0b9d19370f8e(ItemDNA ca57e1c076c01141c5ce58c7341db7833);
+}

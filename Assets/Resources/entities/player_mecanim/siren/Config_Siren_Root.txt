@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ComponentList>
+  <Prefab Name="Entities/Player_Mecanim/Siren/CHR_Siren_VFX"/>
+	
+  <MonoBehaviour Type="BHVTaskManager" NeedInstantiate="False" NeedInitialize="True">
+    <Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Siren/Config_Siren_TaskManager"/>
+  </MonoBehaviour>	
+  
+  <MonoBehaviour Type="FirebirdManage" NeedInitialize="True">
+    <Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Siren/Config_Siren_Skill"/>
+  </MonoBehaviour>
+
+  <MonoBehaviour Type="BHVBrain" NeedInitialize="True">
+    <Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Siren/Config_Siren_Brain"/>
+  </MonoBehaviour>
+  
+  <MonoBehaviour Type="InstanceInput"/>
+  <MonoBehaviour Type="BadAssCharacterMotorLite"/>
+  <MonoBehaviour Type="CollisionManager"/>
+  <MonoBehaviour Type="PlayerBehavior" IsLocalOnly="true"/>
+  <MonoBehaviour Type="PlayerBehaviorRemote" IsRemoteOnly="true"/>
+  <MonoBehaviour Type="PlayerControllerLocal" IsLocalOnly="true"/>
+  <MonoBehaviour Type="PlayerController" IsRemoteOnly="true"/>
+  <MonoBehaviour Type="PlayerWeaponAnimationManagerFSM" IsLocalOnly="true"/>
+  <MonoBehaviour Type="PlayerAssembly"/>
+  <MonoBehaviour Type="PlayerThirdPersonAnimationManagerFSM" NeedInitialize="True">
+	<Settings Type="XMLGeneric" FileName="Entities/Player_Mecanim/Siren/Config_Siren_ThirdPerson_AnimationManager"/>
+  </MonoBehaviour>
+</ComponentList>
+
+
+
+
+
+
+
+

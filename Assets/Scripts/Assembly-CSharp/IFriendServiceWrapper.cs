@@ -1,0 +1,24 @@
+public interface IFriendServiceWrapper : IServiceWrapper
+{
+	void c0c080bd9e3394d77ec5a804d2a9f4106(OnGetMyFriendsList c2db84530ef366a6deb001d449d4aa151);
+
+	void cbbcfd0bf92e11cfa6ba6b913e85d9791(int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c7f0dffe793ab211fb14de2aedcb03e7d(int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void cc247771682223024f44ff9d22a219678(int c93f916e26c7f7aec4117058ff8a6c39d);
+
+	void cb1931c1ebff26aa30fe00faff1603cea(int c5dfde30d8784694fb9999709d290e6c4);
+
+	void cc0c48b374f42e26b6e9ed360a1b3b117(int c5dfde30d8784694fb9999709d290e6c4);
+
+	void cdb408b579eae20e64d078d773e5e11cc(int c5dfde30d8784694fb9999709d290e6c4);
+
+	void cf7722224c7d1307313afc3ac9d6c3f0f(OnIsUserAFriend c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void c4d847bdb1d904be0060f06149e5262fa(OnIsUserIgnored c2db84530ef366a6deb001d449d4aa151, int c5dfde30d8784694fb9999709d290e6c4);
+
+	void cb70aa5c7f0a7f74df164587279faa393(OnGetFriendsCharacterInfo c2db84530ef366a6deb001d449d4aa151);
+
+	void ccceb0f72a209e610a05e32f2bbb3eacb(OnGetMyPendingFriendRequests c2db84530ef366a6deb001d449d4aa151);
+}

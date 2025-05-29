@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1224710343488358}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1224710343488358
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4982156775854842}
+  - 20: {fileID: 20156482587001110}
+  - 114: {fileID: 114773357107931868}
+  - 114: {fileID: 114776703126510296}
+  - 114: {fileID: 114480504231357880}
+  m_Layer: 10
+  m_Name: EffectCamera_UI_Snap
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4982156775854842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224710343488358}
+  m_LocalRotation: {x: 0.01792552, y: 0.8878667, z: 0.087147824, w: -0.45141652}
+  m_LocalPosition: {x: 31.050953, y: 5.593437, z: 7.0917425}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!20 &20156482587001110
+Camera:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224710343488358}
+  m_Enabled: 1
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19166474, g: 0.30196637, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 43
+  orthographic: 0
+  orthographic size: 100
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 1
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &114773357107931868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224710343488358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a9a1eeced8f3c490677871c7c6def8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  sampleDist: 1
+  edgeDetectShader: {fileID: 4800000, guid: 702d9a03a0e81d74e9361f6c3943ab43, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 5d734cf550a7c47489f99e6977deae70, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: 3c649b87143b07248830073db5fd379b, type: 3}
+  edgeExp: 1
+  edgeColor: {r: 0, g: 0, b: 0, a: 1}
+  downsample: 1
+  blursize: 3
+  fontBlurIterations: 2
+  outBloomIterations: 0
+  bloomIntensity: 1
+  outSpeBlurSpread: 1.5
+  edgesOnly: 0
+  edgesOnlyBgColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &114776703126510296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224710343488358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897f7205c458d7cff2fcb4b4dcfa3295, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  tweakMode: 0
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 2
+  useSrcAlphaAsMask: 0
+  bloomIntensity: 4
+  bloomThreshhold: 3
+  bloomBlurIterations: 2
+  lensflares: 0
+  hollywoodFlareBlurIterations: 2
+  lensflareMode: 1
+  hollyStretchWidth: 3.5
+  lensflareIntensity: 1
+  lensflareThreshhold: 0.3
+  flareColorA: {r: 0.4, g: 0.4, b: 0.8, a: 0.75}
+  flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
+  flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
+  flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
+  blurWidth: 1
+  lensFlareVignetteMask: {fileID: 2800000, guid: 6b7ed40d274793a4cb9979f61c240c34, type: 3}
+  lensFlareShader: {fileID: 4800000, guid: d2218ae9d131bf74ea860053ba8e8bf4, type: 3}
+  vignetteShader: {fileID: 4800000, guid: 2f90cef228a1e7b4a8f9cc4d290ad218, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: 3c649b87143b07248830073db5fd379b, type: 3}
+  addBrightStuffOneOneShader: {fileID: 4800000, guid: 2674b9d17bd2dcf409dc143720635604, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 5d734cf550a7c47489f99e6977deae70, type: 3}
+  hollywoodFlaresShader: {fileID: 4800000, guid: a9873b52f2e587845ba9146dacd1a266, type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: e6d6f2e3759b8504e942c8c3ff8a0cc0, type: 3}
+--- !u!114 &114480504231357880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224710343488358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51422e11c225f09a06ef11052ff1c4e0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Radius: 0.4
+  m_SampleCount: 1
+  m_OcclusionIntensity: 2.18
+  m_Blur: 2
+  m_Downsampling: 2
+  m_OcclusionAttenuation: 0.41
+  m_MinZ: 0.28
+  m_NoSsaoDist: 50
+  m_SSAOShader: {fileID: 4800000, guid: 91e4338b46f94884db4378b9cfef5329, type: 3}
+  m_RandomTexture: {fileID: 2800000, guid: 3918bfd2bdccb9440bbba1d0af733b64, type: 3}

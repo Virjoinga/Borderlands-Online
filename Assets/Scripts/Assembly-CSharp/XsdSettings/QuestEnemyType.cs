@@ -1,0 +1,40 @@
+namespace XsdSettings
+{
+	public enum QuestEnemyType
+	{
+		AnyBandit = 0,
+		AnySkag = 1,
+		AnySpiderant = 2,
+		AnyGuardian = 3,
+		AnyCrimson = 4,
+		BanditKiller = 5,
+		BanditRaider = 6,
+		BanditPsycho = 7,
+		BanditSuicidePsycho = 8,
+		BanditBruiser = 9,
+		SkagPup = 10,
+		SkagAdult = 11,
+		SkagSpitter = 12,
+		SkagAlpha = 13,
+		SkagZilla = 14,
+		SpiderantWorker = 15,
+		SpiderantWidowmaker = 16,
+		SpiderantTalos = 17,
+		GuardianWraith = 18,
+		CrimsonLanceDefender = 19,
+		CrimsonMechaKnoxx = 20,
+		BadassBanditKiller = 21,
+		BadassBanditPsycho = 22,
+		BadassCrimsonLanceDefender = 23,
+		BadassGuardianWraith = 24,
+		BadassSpiderantWorker = 25,
+		BadassVkag = 26,
+		Rakk = 27,
+		MidgetShotgunner = 28,
+		BanditScout = 29,
+		CrimsonLanceMedic = 30,
+		CrimsonLanceInfantry = 31,
+		CrimsonLanceSniper = 32,
+		BanditApollyon = 33
+	}
+}

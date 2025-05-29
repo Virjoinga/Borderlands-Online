@@ -1,0 +1,18 @@
+internal interface IPresenceService
+{
+	void c171cc9079535e716dc2c8dd3677a6256(int c5dfde30d8784694fb9999709d290e6c4, OnGetPresence c2db84530ef366a6deb001d449d4aa151);
+
+	void c21e522aeeaf7bcca3d0ea44730a13b6d(OnGetPresence c2db84530ef366a6deb001d449d4aa151);
+
+	void c7f3c9cb8a62583c02d7f21036edfe783(OnGetFriendsPresence c2db84530ef366a6deb001d449d4aa151);
+
+	void c072a932603fc0be0d70802256d009791(OnSearchForCharacter c2db84530ef366a6deb001d449d4aa151, string cf02cbedfd63c343e590df85de90aed56);
+
+	void ce9889db06033bab789a717780b17135d(OnPresenceUpdated c2db84530ef366a6deb001d449d4aa151);
+
+	void cd0ba1bc2fbda11d0b7735073390c54bd(OnPresenceUpdated c2db84530ef366a6deb001d449d4aa151);
+
+	void cbcece01022c83b7cef2eb06b9414e3d8(OnNotifyAntiAddictionLevelEvent c2db84530ef366a6deb001d449d4aa151);
+
+	void c2b3deeb51ec97b16a35cd9df54744fbc(OnNotifyAntiAddictionLevelEvent c2db84530ef366a6deb001d449d4aa151);
+}

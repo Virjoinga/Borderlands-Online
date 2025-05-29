@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1691379607406554}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1691379607406554
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4348154364269188}
+  - 160: {fileID: 160601569155168802}
+  - 161: {fileID: 161681460063457507}
+  - 114: {fileID: 114634793158899373}
+  m_Layer: 26
+  m_Name: SpiderantWeb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4348154364269188
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691379607406554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!160 &160601569155168802
+InteractiveCloth:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691379607406554}
+  m_Enabled: 1
+  m_BendingStiffness: 0
+  m_StretchingStiffness: 1
+  m_Damping: 1
+  m_Thickness: 0.2
+  m_UseGravity: 0
+  m_SelfCollision: 0
+  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
+  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_Mesh: {fileID: 4300000, guid: 0000000deadbeef15deadf00d0000000, type: 2}
+  m_Friction: 1
+  m_Density: 20
+  m_Pressure: 0
+  m_CollisionResponse: 0
+  m_AttachmentTearFactor: 0.5
+  m_AttachmentResponse: 0.2
+  m_TearFactor: 0
+  m_AttachedColliders: []
+--- !u!161 &161681460063457507
+ClothRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691379607406554}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 10aa9129205782341aa761ee0d52608b, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_PauseWhenNotVisible: 1
+--- !u!114 &114634793158899373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691379607406554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050a14748a13c2b73aae02b5530ce152, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_lifeTime: 120
+  m_speedSlowRatio: 0.4
+  m_flyingSpeed: 40
+  m_scaleRatio: 8
+  m_webCloth: {fileID: 0}
+  m_vLandPos: {x: 0, y: 0, z: 0}

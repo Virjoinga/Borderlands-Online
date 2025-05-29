@@ -1,0 +1,47 @@
+using System.Collections.Generic;
+
+public class QuestServiceWrapperSession : IQuestServiceWrapper, IServiceWrapper
+{
+	public void cd93285db16841148ed53a5bbeb35cf20()
+	{
+	}
+
+	public bool c39df47367fa21412aabfef05d9972f8c()
+	{
+		return true;
+	}
+
+	public void c5fdc976a8c3f9e6e8516525fd2a5396f(int c731f8f565b2035819f3412520ff285b3)
+	{
+	}
+
+	public void cf7f98b1de39f26f9a9d63b5d8ac5a26b(int c731f8f565b2035819f3412520ff285b3)
+	{
+	}
+
+	public void c43f812e5db31871c2108e9f7fc8a0a73()
+	{
+	}
+
+	public Dictionary<int, QuestProgress> c4bd163e6f603f6c0724372fd12f5f4cb()
+	{
+		return null;
+	}
+
+	public void cddb1928d6bb517752689884a3e06f40b(int c5dfde30d8784694fb9999709d290e6c4, int c731f8f565b2035819f3412520ff285b3)
+	{
+	}
+
+	public void cb534083a07db3bd6b74a38a62625f875(TalkToNPCCallback c2db84530ef366a6deb001d449d4aa151, int c731f8f565b2035819f3412520ff285b3, int c43e3d8b3e47e153da82a98666f9b6412)
+	{
+	}
+
+	public void c069e3e12ab95ff8518fd20364724de3f(BringToNPCCallback c2db84530ef366a6deb001d449d4aa151, int c731f8f565b2035819f3412520ff285b3, int c43e3d8b3e47e153da82a98666f9b6412)
+	{
+	}
+
+	public void c509488e7555f17435dc7dacc1709e509(int c5dfde30d8784694fb9999709d290e6c4, int c731f8f565b2035819f3412520ff285b3)
+	{
+		OnAccessSingleton<IQuestService, QuestService, QuestServiceOffline>.c5ee19dc8d4cccf5ae2de225410458b86.c509488e7555f17435dc7dacc1709e509(c5dfde30d8784694fb9999709d290e6c4, c731f8f565b2035819f3412520ff285b3);
+	}
+}

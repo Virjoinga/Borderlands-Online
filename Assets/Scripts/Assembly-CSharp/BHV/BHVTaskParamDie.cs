@@ -1,0 +1,54 @@
+using UnityEngine;
+
+namespace BHV
+{
+	public sealed class BHVTaskParamDie : BHVTaskParamAnimationState
+	{
+		public bool cd7166a76de731e5b161e03f4d830b4b5;
+
+		public float c8603e2027b78e6b01305715886ad95a2;
+
+		public Vector3 c9287e7fd25716f0fb6137e5d4ebfb94f;
+
+		public int cb4f02774bd5e0e375e5223103830ce78;
+
+		public BHVTaskParamDie()
+		{
+			base.m_Type = BHVTaskType.Die;
+			cd7166a76de731e5b161e03f4d830b4b5 = true;
+			c8603e2027b78e6b01305715886ad95a2 = 0f;
+			c9287e7fd25716f0fb6137e5d4ebfb94f = Vector3.zero;
+			cb4f02774bd5e0e375e5223103830ce78 = 0;
+		}
+
+		public override void c21abc56059d171e999147f26bbf75889(ref BHVTaskParamSync.Data c90756c75001df916758775f95eee6676, bool ca0a690ca94fac43f6d2dd7209319634b)
+		{
+			base.c21abc56059d171e999147f26bbf75889(ref c90756c75001df916758775f95eee6676, ca0a690ca94fac43f6d2dd7209319634b);
+			if (ca0a690ca94fac43f6d2dd7209319634b)
+			{
+				while (true)
+				{
+					switch (3)
+					{
+					case 0:
+						break;
+					default:
+						if (1 == 0)
+						{
+							/*OpCode not supported: LdMemberToken*/;
+						}
+						c90756c75001df916758775f95eee6676.c690ae2dd8233a5203502a2edad03714b = cd7166a76de731e5b161e03f4d830b4b5;
+						c90756c75001df916758775f95eee6676.caa1b18212b31f179824db0c752e81263 = cb4f02774bd5e0e375e5223103830ce78;
+						c90756c75001df916758775f95eee6676.c8d6d0618a619c5377bfa2192b652bb59 = c8603e2027b78e6b01305715886ad95a2;
+						c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4 = c9287e7fd25716f0fb6137e5d4ebfb94f;
+						return;
+					}
+				}
+			}
+			cd7166a76de731e5b161e03f4d830b4b5 = c90756c75001df916758775f95eee6676.c690ae2dd8233a5203502a2edad03714b;
+			cb4f02774bd5e0e375e5223103830ce78 = c90756c75001df916758775f95eee6676.caa1b18212b31f179824db0c752e81263;
+			c8603e2027b78e6b01305715886ad95a2 = c90756c75001df916758775f95eee6676.c8d6d0618a619c5377bfa2192b652bb59;
+			c9287e7fd25716f0fb6137e5d4ebfb94f = c90756c75001df916758775f95eee6676.cc42106392aa3350c9aa3f1157cd1bce4;
+		}
+	}
+}
